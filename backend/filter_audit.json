@@ -1,0 +1,580 @@
+[
+  {
+    "component": "AuditLogs.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "filters",
+      "debouncedFilters"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": true
+  },
+  {
+    "component": "BookingSlots.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "Communications.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "search",
+      "statusFilter",
+      "search",
+      "statusFilter",
+      "search",
+      "statusFilter",
+      "readFilter",
+      "searchParams"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": true
+  },
+  {
+    "component": "CustomerDetail.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "Customers.jsx",
+    "paramsSentToApi": [
+      "customerType",
+      "search",
+      "page",
+      "limit"
+    ],
+    "filterStates": [
+      "searchQuery",
+      "debouncedSearch",
+      "selectedType"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "DailySales.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "filterPreset",
+      "typeFilter",
+      "searchTerm",
+      "searchInput"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "Dashboard.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "DealerCars.jsx",
+    "paramsSentToApi": [
+      "search",
+      "status",
+      "page",
+      "limit"
+    ],
+    "filterStates": [
+      "searchQuery",
+      "debouncedSearch",
+      "statusFilter"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "EditJobCard.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "Employees.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "searchQuery",
+      "roleFilter",
+      "statusFilter"
+    ],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "GlobalTrackerCarSearch.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "searchTerm",
+      "debouncedSearch",
+      "statusFilter",
+      "typeFilter"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": true
+  },
+  {
+    "component": "ImportTrackers.jsx",
+    "paramsSentToApi": [
+      "type",
+      "status",
+      "customerId",
+      "search",
+      "page",
+      "limit"
+    ],
+    "filterStates": [
+      "searchQuery",
+      "debouncedSearch",
+      "selectedStatus"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "Inventory.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "searchQuery"
+    ],
+    "hasDebounce": false,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "InventoryDetail.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "searchQuery",
+      "stockFilter"
+    ],
+    "hasDebounce": false,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "InventoryHierarchyDetail.jsx",
+    "paramsSentToApi": [
+      "parentId",
+      "page",
+      "limit",
+      "search",
+      "stockStatus"
+    ],
+    "filterStates": [
+      "searchQuery",
+      "debouncedSearch",
+      "stockFilter"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "InvoicePrint.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "Invoices.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "searchParams",
+      "searchTerm",
+      "statusFilter"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "JobCards.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "updatingStatus",
+      "search",
+      "debouncedSearch",
+      "statusFilter",
+      "jobCardType"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": true
+  },
+  {
+    "component": "NewJobCard.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "PurchaseOrderDetail.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "PurchaseOrders.jsx",
+    "paramsSentToApi": [
+      "search",
+      "status",
+      "page",
+      "limit"
+    ],
+    "filterStates": [
+      "searchQuery",
+      "statusFilter"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": true
+  },
+  {
+    "component": "Rentals.jsx",
+    "paramsSentToApi": [
+      "type",
+      "status",
+      "customerId",
+      "search",
+      "page",
+      "limit"
+    ],
+    "filterStates": [
+      "searchQuery",
+      "debouncedSearch",
+      "selectedStatus"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "Settings.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "Suppliers.jsx",
+    "paramsSentToApi": [
+      "search",
+      "status"
+    ],
+    "filterStates": [
+      "searchQuery",
+      "statusFilter"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "TrackerCarDetail.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "statusUpdating",
+      "isCorrectStatusModalOpen"
+    ],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "TrackerDetail.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "bulkType",
+      "bulkStatus",
+      "statusUpdating",
+      "carSearch",
+      "statusFilter",
+      "typeFilter",
+      "complianceFilter",
+      "availableFilters"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "Trash.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "filters"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "Vehicles.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "searchQuery",
+      "selectedType",
+      "customerSearch",
+      "debouncedSearch"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": true
+  },
+  {
+    "component": "CustomerBatchDetail.jsx",
+    "paramsSentToApi": [
+      "search",
+      "page",
+      "limit"
+    ],
+    "filterStates": [
+      "searchQuery"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "CustomerBatches.jsx",
+    "paramsSentToApi": [
+      "search",
+      "status"
+    ],
+    "filterStates": [
+      "searchQuery",
+      "statusFilter"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "CustomerBookings.jsx",
+    "paramsSentToApi": [
+      "search",
+      "status"
+    ],
+    "filterStates": [
+      "searchQuery",
+      "statusFilter"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "CustomerDashboard.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "CustomerInvoices.jsx",
+    "paramsSentToApi": [
+      "search",
+      "status"
+    ],
+    "filterStates": [
+      "searchQuery",
+      "statusFilter"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "CustomerJobCardDetail.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "CustomerJobCards.jsx",
+    "paramsSentToApi": [
+      "search",
+      "status"
+    ],
+    "filterStates": [
+      "searchQuery",
+      "statusFilter"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "CustomerServiceHistory.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "CustomerTrackerCarDetail.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "CustomerVehicles.jsx",
+    "paramsSentToApi": [
+      "search"
+    ],
+    "filterStates": [
+      "searchQuery"
+    ],
+    "hasDebounce": true,
+    "hasAbortController": true,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "AdminLayout.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": true,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "BulkAddModal.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "vehicleTypeId"
+    ],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "EmployeeDrawer.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": true,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "InternalNotesSection.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "InviteEmployeeModal.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": true,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "PrintableInvoice.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "PrintableJobCard.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "PrintableRental.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "PrintableSale.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "TrackerCarActivityHistory.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "TrackerCarDocuments.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "TrackerCreationModal.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "UnifiedHistoryTimeline.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [
+      "typeFilter"
+    ],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  },
+  {
+    "component": "VehicleTypeModal.jsx",
+    "paramsSentToApi": [],
+    "filterStates": [],
+    "hasDebounce": false,
+    "hasAbortController": false,
+    "hasSetPageOne": false
+  }
+]

@@ -1,0 +1,372 @@
+[
+  {
+    "file": "src/pages/AcceptInvite.jsx",
+    "hasSearch": false,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "token"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/BookService.jsx",
+    "hasSearch": false,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "location.search",
+      "formData.date, refreshTrigger, formData.vehicles.length"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/RequestQuote.jsx",
+    "hasSearch": false,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      ""
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/Services.jsx",
+    "hasSearch": false,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/admin/AuditLogs.jsx",
+    "hasSearch": false,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "token, page, filters",
+      "token"
+    ],
+    "resetsPagination": true
+  },
+  {
+    "file": "src/pages/admin/Communications.jsx",
+    "hasSearch": true,
+    "hasDebounce": true,
+    "fetchCalls": [],
+    "useEffects": [
+      "value, delay",
+      "debouncedSearch, statusFilter, datePreset, customFromDate, customToDate",
+      "fetchQuotes",
+      "debouncedSearch, statusFilter, datePreset, customFromDate, customToDate",
+      "fetchMessages",
+      "debouncedSearch, statusFilter, datePreset, customFromDate, customToDate",
+      "fetchBookings",
+      "fetchNotifications",
+      "fetchSummary"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/admin/CustomerDetail.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "id"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/admin/Customers.jsx",
+    "hasSearch": true,
+    "hasDebounce": true,
+    "fetchCalls": [],
+    "useEffects": [
+      "fetchCustomers",
+      "searchQuery",
+      "viewCustomer"
+    ],
+    "resetsPagination": true
+  },
+  {
+    "file": "src/pages/admin/DailySales.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "searchInput",
+      "filterPreset, typeFilter, searchTerm, pagination.page",
+      "customRange.startDate, customRange.endDate"
+    ],
+    "resetsPagination": true
+  },
+  {
+    "file": "src/pages/admin/DealerCars.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "fetchCars"
+    ],
+    "resetsPagination": true
+  },
+  {
+    "file": "src/pages/admin/EditJobCard.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "",
+      "id, vehicles",
+      "id"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/admin/Employees.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "token",
+      "searchQuery, roleFilter, statusFilter, activeTab",
+      "admins"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/admin/GlobalTrackerCarSearch.jsx",
+    "hasSearch": true,
+    "hasDebounce": true,
+    "fetchCalls": [],
+    "useEffects": [
+      "searchTerm",
+      "fetchCars"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/admin/ImportTrackers.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "fetchTrackers",
+      "searchQuery, fetchTrackers"
+    ],
+    "resetsPagination": true
+  },
+  {
+    "file": "src/pages/admin/Inventory.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "",
+      "canCreate, canEdit",
+      "searchQuery, selectedCategory"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/admin/InventoryDetail.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "id",
+      "searchQuery, stockFilter",
+      "historyTarget, isHistoryModalOpen, transactionPage, id"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/admin/InventoryHierarchyDetail.jsx",
+    "hasSearch": true,
+    "hasDebounce": true,
+    "fetchCalls": [],
+    "useEffects": [
+      "searchQuery",
+      "debouncedSearch, stockFilter, currentDepth",
+      "fetchHierarchyData",
+      "historyTarget, isHistoryModalOpen, transactionPage, id"
+    ],
+    "resetsPagination": true
+  },
+  {
+    "file": "src/pages/admin/Invoices.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "",
+      "jobCards, initialJobCardId",
+      "selectedInvoiceForPrint, isPrinting"
+    ],
+    "resetsPagination": true
+  },
+  {
+    "file": "src/pages/admin/JobCards.jsx",
+    "hasSearch": true,
+    "hasDebounce": true,
+    "fetchCalls": [],
+    "useEffects": [
+      "search, debouncedSearch",
+      "debouncedSearch, statusFilter, jobCardType, page"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/admin/NewJobCard.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "initialBookingId, initialVehicleId, trackerCarId, stateCustomerId",
+      "vehicles, initialVehicleId, initialBookingId, formData.vehicleMake"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/admin/PurchaseOrders.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "searchQuery, statusFilter, page"
+    ],
+    "resetsPagination": true
+  },
+  {
+    "file": "src/pages/admin/Rentals.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "fetchTrackers",
+      "searchQuery, fetchTrackers"
+    ],
+    "resetsPagination": true
+  },
+  {
+    "file": "src/pages/admin/Suppliers.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "searchQuery, statusFilter"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/admin/TrackerDetail.jsx",
+    "hasSearch": true,
+    "hasDebounce": true,
+    "fetchCalls": [],
+    "useEffects": [
+      "searchTerm",
+      "fetchTracker",
+      "fetchCars, debouncedSearch, statusFilter, typeFilter, complianceFilter"
+    ],
+    "resetsPagination": true
+  },
+  {
+    "file": "src/pages/admin/Trash.jsx",
+    "hasSearch": false,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "filters.search, filters.type, fetchTrash"
+    ],
+    "resetsPagination": true
+  },
+  {
+    "file": "src/pages/admin/Vehicles.jsx",
+    "hasSearch": true,
+    "hasDebounce": true,
+    "fetchCalls": [],
+    "useEffects": [
+      "searchQuery",
+      "location.search, debouncedSearch, selectedType, page",
+      "viewDetailsVehicle"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/customer/CustomerBatchDetail.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "fetchBatch, fetchVehicles, fetchFinancialSummary, fetchInvoices",
+      "searchQuery, fetchVehicles"
+    ],
+    "resetsPagination": true
+  },
+  {
+    "file": "src/pages/customer/CustomerBatches.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "fetchBatches",
+      "searchQuery, fetchBatches"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/customer/CustomerBookings.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "fetchBookings",
+      "searchQuery, fetchBookings"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/customer/CustomerInvoices.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "fetchInvoices",
+      "searchQuery, fetchInvoices"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/customer/CustomerJobCards.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "fetchJobCards",
+      "searchQuery, fetchJobCards"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/customer/CustomerServiceHistory.jsx",
+    "hasSearch": false,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "fetchVehicles"
+    ],
+    "resetsPagination": false
+  },
+  {
+    "file": "src/pages/customer/CustomerVehicles.jsx",
+    "hasSearch": true,
+    "hasDebounce": false,
+    "fetchCalls": [],
+    "useEffects": [
+      "fetchVehicles",
+      "searchQuery, fetchVehicles"
+    ],
+    "resetsPagination": false
+  }
+]

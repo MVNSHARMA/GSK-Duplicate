@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Official backend for the GSK Automotive Management System built with Node.js, Express.js, and MongoDB.",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "node --test test_phase8_permissions.mjs",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "migrate:inventory": "node scripts/migrateInventoryVariants.js"
+  },
+  "author": "Omansh Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "@getbrevo/brevo": "^6.0.3",
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^1.41.3",
+    "cors": "^2.8.6",
+    "date-fns": "^4.4.0",
+    "date-fns-tz": "^3.2.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.6.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "luxon": "^3.7.2",
+    "mongoose": "^9.9.1",
+    "multer": "^2.2.0",
+    "multer-storage-cloudinary": "^4.0.0",
+    "pdfkit": "^0.20.2"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.2.0",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.3.0"
+  }
+}

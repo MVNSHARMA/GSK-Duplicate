@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-white text-gray-800 font-sans m-0 p-0 overflow-x-hidden;
+    overscroll-behavior-y: none;
+  }
+  h1, h2, h3 {
+    @apply font-heading uppercase tracking-tight text-dark;
+  }
+  h4, h5, h6 {
+    @apply font-sans font-bold text-dark;
+  }
+  
+  /* Performance optimizations for animations and images */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  img, svg {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+  
+  img {
+    @apply object-cover;
+    content-visibility: auto;
+  }
+}
+
+/* Custom slant utilities if needed later */
+.clip-slant {
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.clip-slant-reverse {
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* Infinite Marquee */
+@keyframes marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+  will-change: transform;
+}
+
+.pause-marquee:hover .animate-marquee {
+  animation-play-state: paused;
+}
