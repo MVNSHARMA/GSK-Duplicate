@@ -5,6 +5,7 @@
   "description": "Official backend for the GSK Automotive Management System built with Node.js, Express.js, and MongoDB.",
   "main": "src/server.js",
   "scripts": {
+    "build": "echo 'Backend build ready'",
     "test": "node --test test_phase8_permissions.mjs",
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
