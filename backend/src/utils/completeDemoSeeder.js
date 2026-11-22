@@ -70,20 +70,17 @@ export async function seedCompleteDemoLogic() {
     ]);
 
     console.log("[DemoSeeder] Ensuring staff accounts...");
-    const staffPasswordHash = await bcrypt.hash("password123", 10);
-    const adminPasswordHash = await bcrypt.hash("admin123", 10);
-    
     let adminUser = await User.findOne({ email: "admin@gskautomotive.com" });
     if (!adminUser) {
         adminUser = await User.create({
             name: "Boss / Owner",
             email: "admin@gskautomotive.com",
-            password: adminPasswordHash,
+            password: "admin123",
             role: "super_admin",
             status: "active"
         });
     } else {
-        adminUser.password = adminPasswordHash;
+        adminUser.password = "admin123";
         adminUser.status = "active";
         await adminUser.save();
     }
@@ -93,10 +90,14 @@ export async function seedCompleteDemoLogic() {
         managerUser = await User.create({
             name: "Mike Manager",
             email: "mike.manager@gskautomotive.com",
-            password: staffPasswordHash,
+            password: "password123",
             role: "admin",
             status: "active"
         });
+    } else {
+        managerUser.password = "password123";
+        managerUser.status = "active";
+        await managerUser.save();
     }
 
     let mechanicJohn = await User.findOne({ email: "john.mechanic@gskautomotive.com" });
@@ -104,10 +105,14 @@ export async function seedCompleteDemoLogic() {
         mechanicJohn = await User.create({
             name: "John Lead Mechanic",
             email: "john.mechanic@gskautomotive.com",
-            password: staffPasswordHash,
+            password: "password123",
             role: "mechanic",
             status: "active"
         });
+    } else {
+        mechanicJohn.password = "password123";
+        mechanicJohn.status = "active";
+        await mechanicJohn.save();
     }
 
     let mechanicSarah = await User.findOne({ email: "sarah.service@gskautomotive.com" });
@@ -115,10 +120,14 @@ export async function seedCompleteDemoLogic() {
         mechanicSarah = await User.create({
             name: "Sarah Technician",
             email: "sarah.service@gskautomotive.com",
-            password: staffPasswordHash,
+            password: "password123",
             role: "mechanic",
             status: "active"
         });
+    } else {
+        mechanicSarah.password = "password123";
+        mechanicSarah.status = "active";
+        await mechanicSarah.save();
     }
 
     console.log("[DemoSeeder] Creating Customers (Retail, Fleet & Imports)...");
