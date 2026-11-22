@@ -39,7 +39,7 @@ app.set('trust proxy', 1);
 
 app.use(helmet());
 
-const GSK_VERCEL_ORIGIN_REGEX = /^https:\/\/(gsk-automotive|chrysolite-gsk)[a-z0-9-]*\.vercel\.app$/i;
+const GSK_VERCEL_ORIGIN_REGEX = /^https:\/\/[a-z0-9-]*gsk[a-z0-9-]*\.vercel\.app$/i;
 const GSK_RENDER_ORIGIN_REGEX = /^https:\/\/[a-z0-9-]+\.onrender\.com$/i;
 
 const corsOptions = {
@@ -53,7 +53,7 @@ const corsOptions = {
             'http://localhost:5000',
             'http://localhost:5005'
         ];
-        
+
         if (process.env.FRONTEND_URL) {
             const urls = process.env.FRONTEND_URL.split(',').map(u => u.trim().replace(/\/$/, '')).filter(Boolean);
             allowedOrigins.push(...urls);
@@ -78,11 +78,11 @@ app.use(cors(corsOptions));
 
 // Lightweight health check endpoint for Render / load balancers
 app.get(['/healthz', '/api/health'], (req, res) => {
-    res.status(200).json({ 
-        status: 'ok', 
+    res.status(200).json({
+        status: 'ok',
         service: 'GSK Automotive Backend',
-        uptime: process.uptime(), 
-        timestamp: new Date().toISOString() 
+        uptime: process.uptime(),
+        timestamp: new Date().toISOString()
     });
 });
 
@@ -92,20 +92,20 @@ let seederHasRun = false;
 app.use(async (req, res, next) => {
     try {
         await connectDB();
-        
+
         if (!seederHasRun && process.env.SEED_ADMIN === 'true') {
             await runSeeder();
             seederHasRun = true;
         }
-        
+
         next();
     } catch (error) {
         console.error("Database connection/initialization error:", error);
-        res.status(500).json({ 
-            success: false, 
+        res.status(500).json({
+            success: false,
             error: 'Database Connection Error',
             details: error.message,
-            stack: process.env.NODE_ENV === 'development' ? error.stack : undefined 
+            stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
         });
     }
 });
@@ -182,4 +182,4 @@ app.use((err, req, res, next) => {
     res.status(500).json({ success: false, error: err.message || 'Server Error' });
 });
 
-export default app;
+export default app; true
