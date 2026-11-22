@@ -12,7 +12,8 @@ import {
   updatePassword,
   updatePermissions,
   getTechnicians,
-  resendInvite
+  resendInvite,
+  seedDemoDataController
 } from "../controllers/adminController.js";
 import { getAuditLogById, getAuditLogs } from "../controllers/auditController.js";
 import { runAudit } from "../utils/audit.js";
@@ -32,6 +33,9 @@ router.route("/technicians")
 
 router.route("/system-audit")
   .get(authorizeRoles('super_admin'), runAudit);
+
+router.route("/seed-demo-data")
+  .post(authorizeRoles('super_admin'), seedDemoDataController);
 
 router.route("/profile")
   .get(getProfile)

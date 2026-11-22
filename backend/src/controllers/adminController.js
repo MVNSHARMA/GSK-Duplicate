@@ -735,3 +735,21 @@ export const updatePermissions = async (req, res) => {
     res.status(500).json({ success: false, error: "Server error updating permissions" });
   }
 };
+
+/**
+ * POST /api/admins/seed-demo-data
+ * Populates complete client demo data across all modules (Admin only).
+ */
+export const seedDemoDataController = async (req, res) => {
+  try {
+    const { seedCompleteDemoLogic } = await import('../utils/completeDemoSeeder.js');
+    await seedCompleteDemoLogic();
+    res.status(200).json({
+      success: true,
+      message: "Comprehensive demo data populated successfully across all modules!"
+    });
+  } catch (error) {
+    console.error("Seed demo data error:", error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+};

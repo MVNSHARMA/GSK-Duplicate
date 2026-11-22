@@ -9,6 +9,7 @@
     "test": "node --test test_phase8_permissions.mjs",
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
+    "seed:demo": "node scripts/seedCompleteDemo.mjs",
     "migrate:inventory": "node scripts/migrateInventoryVariants.js"
   },
   "author": "Omansh Sharma",
